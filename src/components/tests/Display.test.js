@@ -41,8 +41,8 @@ test('fetch is pressed, the show component displays', async () => {
     const button = screen.getByRole('button'); 
     userEvent.click(button);
 
-    const showDetails = await screen.findByTestId("show-container");
-    expect(showDetails).toBeInTheDocument();
+    const shows = await screen.findByTestId("show-container");
+    expect(shows).toBeInTheDocument();
 })
 
 test('fetch is pressed, the amount of select options rendered is equal to the amount of seasons in your test data', async () => {
